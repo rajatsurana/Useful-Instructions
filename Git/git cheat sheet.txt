@@ -1,0 +1,33 @@
+** clone a branch
+git clone <url>
+
+**get up to date with a branch from cloud repo
+git pull origin <branchName>
+
+** add new files
+git add .
+
+**commit the added files
+git commit -m "<message>"
+
+** update cloud repo with local repo
+
+git push origin <branchName>
+
+**switch to another branch
+git checkout <branchName>
+
+**create a new branch
+git branch <branchName>
+
+**create and switch to a new branch
+git checkout -b <newBranchName>
+
+**update your branch with a feature branch
+git merge featureBranch
+
+**Set user email
+git config --global user.email <emailAddress>
+
+**Get user email
+git config user.email

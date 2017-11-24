@@ -1,0 +1,36 @@
+**Get proxy details
+npm config get proxy
+
+**Set proxy
+npm config set proxy=http://proxy.domain.com:6050/
+
+**Install Angular CommandLine
+npm install -g @angular/cli
+
+**Set env variable - "path" using result of below command
+npm get prefix
+
+----------open a new cmd
+**Check ifangular commandline is installed or not
+ng --version
+
+**change to local folder
+C:/> d:
+
+D:/> md angular2
+
+     cd angular2
+
+**create a new app
+ng new my-app
+
+     	cd my-app
+
+**run server and open browser
+ng serve --open
+
+**for existing git repo->install all dependencies
+
+npm install
+
+
