@@ -1,0 +1,7 @@
+/*
+Refer : https://docs.gradle.org/current/userguide/build_environment.html
+*/
+
+Set enviroment variable "GRADLE_USER_HOME" to "C:\Users\<USERNAME>\.gradle"
+
+Also place gradle.properties file in individual projects ".gradle" folder
