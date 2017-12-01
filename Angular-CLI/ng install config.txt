@@ -1,8 +1,18 @@
 **Get proxy details
 npm config get proxy
 
+**edit .npmrc config file
+npm config edit
+
+**registry
+npm config set registry https://registry.npmjs.org/
+
+**SSL Certificate
+npm set strict-ssl false
+
 **Set proxy
-npm config set proxy=http://proxy.domain.com:6050/
+npm config set proxy http://<id>:<password>@proxy.domain.com:6050/
+npm config set https-proxy http://<id>:<password>@proxy.domain.com:6050/
 
 **Install Angular CommandLine
 npm install -g @angular/cli

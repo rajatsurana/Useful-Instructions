@@ -31,3 +31,6 @@ git config --global user.email <emailAddress>
 
 **Get user email
 git config user.email
+
+**SSL certificate problem: unable to get local issuer certificate
+git config --global http.sslVerify false
