@@ -34,3 +34,7 @@ git config user.email
 
 **SSL certificate problem: unable to get local issuer certificate
 git config --global http.sslVerify false
+
+**Roll back to previous commit
+git reset --hard <commit-hash>
+git push -f origin master
