@@ -32,6 +32,12 @@ git config --global user.email <emailAddress>
 **Get user email
 git config user.email
 
+**set user name
+git config --global user.name <username>
+
+**Get user email
+git config user.name
+
 **SSL certificate problem: unable to get local issuer certificate
 git config --global http.sslVerify false
 
