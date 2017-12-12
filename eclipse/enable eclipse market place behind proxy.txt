@@ -1,0 +1,7 @@
+Add following lines to "eclipse.ini" file:
+
+-Dhttp.proxyHost=proxy.domain.com
+-Dhttp.proxyPort=3128
+-Dhttp.proxyUser=id
+-Dhttp.proxyPassword=pass
+-Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient  
