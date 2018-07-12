@@ -1,0 +1,95 @@
+docker ps (Only running containers)
+docker ps -a
+
+Remove container
+docker rm <id>
+
+docker images
+
+Remove image
+docker rmi <image id>
+docker-machine env default
+
+docker-machine start default
+
+docker-machine status default
+
+docker-machine ip
+docker-machine env default
+docker-machine create --driver virtualbox default
+
+docker run -p 80:80 <image name>
+
+-p <machine port>:<container port>
+
+dcoker stop <psid>
+
+//Linux
+docker run -p 8080:3000 -v $(pwd):/var/www -w "/var/www" node npm start
+
+//Windows Git bash:
+docker run -p 8080:3000 -v /$PWD:/var/www -w //var/www node npm start
+
+//Remove all images
+docker rmi $(docker images -q)
+
+//Remove all container and its volumes
+
+docker rm -v $(docker ps -a -q)
+
+docker build -f node.dockerfile -t rajatsurana/node .
+
+//In daemon mode
+docker run -d -p 8080:3000 rajatsurana/node
+
+docker run -d --name my-mongodb mongo
+
+docker run -d -p 5000:5000 --link my-mongodb:mongodb rajatsurana/node
+
+docker exec <containerid/name> node dbSeeder.js
+
+
+
+docker network ls
+
+docker network create --driver bridge isolated_network
+
+docker network inspect isolated_network
+
+docker run -d --net=isolated_network --name mongodb mongo
+
+docker run -d --net=isolated_network --name nodeapp -p 3000:3000 rajatsurana/node
+
+
+--------Docker-compose commands----------------
+
+docker-compose build
+docker-compose up
+docker-compose down  
+
+docker-compose logs
+docker-compose ps
+docker-compose stop
+docker-compose start
+docker-compose rm
+
+
+---Individual service build----
+
+docker-compose build mongo
+
+-----without dependencies-----
+docker-compose up --no-deps node
+
+----(stop and remove)--
+docker-compose down --rmi all --volumes
+
+---run in daemon mode
+docker-compose up -d
+
+
+
+
+------------------proxy--------------
+export http_proxy='http://proxy.domain.com:3128' && export https_proxy='https://proxy.domain.com:3128' &&
+
